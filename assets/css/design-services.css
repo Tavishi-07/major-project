@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.services {
+    background-image: url('../images/services.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgba(51, 46, 46, 0.761);
+}
+
+.services-content {
+    max-width: 670px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.services-content h2 {
+    font-size: calc(1.375rem + 1.5vw);
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.services-content p {
+    font-size: 1.2rem;
+}
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.card button {
+    background: #ff6f61;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #fe7f74;
+}
+
+.card h3 {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+.furniture-para{
+  margin-top: 5px;
+}
+
+.interior-para{
+  margin-top: 57px;
+}
+
+.additional-para{
+  margin-top: 61px;
+}
+
+.detail-section {
+    background: #f5f5f5;
+    padding: 50px;
+}
+
+.detail-section-interior {
+    background-image: url('../images/service-interior.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.detail-section-furniture {
+    background-image: url('../images/service-furniture.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.detail-section-additional {
+    background-image: url('../images/service-additional.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.detail-section h2 {
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+
+.detail-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.detail-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  width: 255px;
+  min-height: 300px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-card h4 {
+    color: #0d2b43;
+}
+
+.detail-card p {
+    margin-top: 20px;
+}
+
+.detail-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Placeholder styles for cards */
+.furniture-card,
+.interior-card,
+.additional-card,
+.furniture,
+.interior-design-card,
+.additional-info-card,
+.outdoor-card,
+.repair-card,
+.assembly-card,
+.eco-card,
+.cabinetry-card,
+.ready-card,
+.custom-card,
+.design-card,
+.space-card,
+.threed-card,
+.project-card,
+.consultation-card,
+.lighting-card,
+.window-card,
+.flooring-card,
+.kitchen-card,
+.decor-card,
+.staging-card,
+.styling-card,
+.commercial-card,
+.sustainable-card,
+.smart-card,
+.art-card,
+.workspace-card,
+.virtual-design-card {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Final paragraph styles */
+.final-paragraph {
+    background: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.final-paragraph p {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* Add animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.services-content,
+.card,
+.detail-card,
+.final-paragraph {
+    animation: fadeIn 1s ease-in;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .detail-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px;
+    padding: 0 10px; /* Adjust padding if necessary */
+  }
+  
+  .detail-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Full width for each card */
+    box-sizing: border-box;
+  }
+} 

@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
+
+.background-image {
+    background-image: url('../images/faq-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.container-xxl {
+    position: relative;
+    z-index: 1;
+    background: none; /* Ensure background is transparent */
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.513); /* Transparent white background */
+    
+}
+
+.navbar, .footer {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+}
+
+
+.container1 {
+  margin: 2rem;
+  padding: 2rem 4rem;
+  max-width: 48rem;
+  background: #fdf5f4; 
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  /* background: rgba(255, 255, 255, 0.513); */
+}
+.container1:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  padding-bottom: 25px;
+  text-align: center;
+  color: #ff6f61;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+  /* background: rgba(255, 255, 255, 0.513);
+  padding-left: 20px;
+  padding-right: 20px; */
+}
+.accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #FE6F5E; /* Bittersweet */
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  transition: color 0.3s ease;
+}
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #FE6F5E; /* Bittersweet */
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #7288a2;
+  border-radius: 22px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+  transition: background-color 0.3s ease;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+  transition: background-color 0.3s ease;
+}
+.accordion button[aria-expanded=true] {
+  color: #FE6F5E; /* Bittersweet */
+}
+.accordion button[aria-expanded=true] .icon {
+  border-color: #FE6F5E; /* Bittersweet */
+}
+.accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: opacity 200ms linear, max-height 200ms linear;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #4d5974; /* Ensure the text color is set properly */
+  margin: 2em 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .container1 {
+        padding: 2rem 3rem;
+    }
+
+    .accordion button {
+        font-size: 1.1rem;
+    }
+
+    .accordion .accordion-content p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .container1 {
+        padding: 1.5rem 2.5rem;
+        margin: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .accordion button {
+        font-size: 1rem;
+    }
+
+    .accordion .accordion-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        padding: 1.5rem 2rem;
+        margin: 1rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .accordion button {
+        font-size: 0.95rem;
+    }
+
+    .accordion .accordion-content p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container1 {
+        padding: 1rem 1.5rem;
+        margin: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .accordion button {
+        font-size: 0.9rem;
+    }
+
+    .accordion .accordion-content p {
+        font-size: 0.8rem;
+    }
+}

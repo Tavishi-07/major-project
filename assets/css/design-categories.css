@@ -1,0 +1,220 @@
+/* for upcoming products card */
+.image-container {
+    position: relative;
+    display: inline-block; /* Ensure the container fits the image size */
+}
+
+.image-container img {
+    width: 100%; /* Ensure image scales with the container */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition for text appearance */
+    pointer-events: none; /* Ensure overlay text doesn't interfere with hover */
+}
+
+.image-container:hover img {
+    opacity: 0.5; /* Reduce opacity on hover */
+}
+
+.image-container:hover .overlay {
+    opacity: 0.8; /* Show overlay text on hover */
+}
+
+
+/* media queries */
+/* General styles for smaller devices (up to iPhone screen size) */
+@media (max-width: 576px) {
+    .navbar .navbar-brand {
+        padding: 0;
+    }
+
+    .navbar .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .product-section h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .product-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Display posts in three columns */
+        gap: 20px;
+        justify-items: center; /* Center items horizontally within each grid cell */
+    }
+
+    .product-card-display {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .product-card-display img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-card-display p {
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    /* .footer .btn-link {
+        font-size: 0.875rem;
+    }
+
+    .footer p {
+        font-size: 0.875rem;
+    } */
+}
+
+/* Styles for tablets (portrait mode) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar .navbar-brand {
+        padding: 0 1rem;
+    }
+
+    .navbar .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .product-section h2 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .product-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Display posts in three columns */
+        gap: 20px;
+        justify-items: center; /* Center items horizontally within each grid cell */
+    }
+
+    .product-card-display {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .product-card-display img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-card-display p {
+        text-align: center;
+        font-size: 1.125rem;
+    }
+
+    /* .footer .btn-link {
+        font-size: 1rem;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    } */
+}
+
+/* Styles for larger tablets and small laptops */
+@media (min-width: 769px) and (max-width: 992px) {
+    .navbar .navbar-brand {
+        padding: 0 2rem;
+    }
+
+    .navbar .btn {
+        padding: 1rem 2rem;
+        font-size: 1.125rem;
+    }
+
+    .product-section h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .product-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product-card-display {
+        flex: 0 0 30%;
+        margin: 0.5rem;
+    }
+
+    .product-card-display img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-card-display p {
+        text-align: center;
+        font-size: 1.125rem;
+    }
+
+    /* .footer .btn-link {
+        font-size: 1.125rem;
+    }
+
+    .footer p {
+        font-size: 1.125rem;
+    } */
+}
+
+/* Styles for desktop and larger devices */
+@media (min-width: 993px) {
+    .navbar .navbar-brand {
+        padding: 0 2rem;
+    }
+
+    .navbar .btn {
+        padding: 1rem 2rem;
+        font-size: 1.125rem;
+    }
+
+    .product-section h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .product-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product-card-display {
+        flex: 0 0 30%;
+        margin: 1rem;
+    }
+
+    .product-card-display img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-card-display p {
+        text-align: center;
+        font-size: 1.125rem;
+    }
+
+    /* .footer .btn-link {
+        font-size: 1.125rem;
+    }
+
+    .footer p {
+        font-size: 1.125rem;
+    } */
+}
